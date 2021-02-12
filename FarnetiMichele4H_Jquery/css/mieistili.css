@@ -1,0 +1,46 @@
+.container{
+    margin-top: 20px;
+}
+
+
+.margine{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#casellanominativi{
+    height: 100%;
+}
+
+.menu{
+    width: 100%; 
+}
+
+
+
+#navgenerale{
+    width: 100%;
+    padding: 0px;
+}
+
+p{
+    margin: 3px;
+    border: 1px solid black;
+    font-size: 13px;
+}
+
+@media (max-width: 767px) {
+    .col-md-4 {
+      margin-bottom: 10px;
+    }
+}
+#btninvio{
+    margin-left: 70px;
+}
+
+
+
+
+
+
+
