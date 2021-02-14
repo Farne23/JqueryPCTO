@@ -6,6 +6,7 @@
         <title>Esercitazione con Jquery</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -44,7 +45,7 @@
                             <button class="btn btn-primary btn-lg container-fluid">CONTATTI</button>
                           </div>
                         </div>
-                      </div>
+                    </div>
                 </nav>            
             </div>
             <div class="row gx-5">
@@ -64,32 +65,49 @@
                     </div>
                     <div class="row gx-5 margine">
                         <div class="col-sm-12 casella">
-                            <div class="p-4 bordo bg-light">
-                                <div class="row container-fluid inserimento margine">
-                                    <div class="col-md-4 ">NOME</div>
-                                    <div class="col-md-4 "><input type="text" id="txtnome"></div>
+                            <div class="p-4 bordo bg-light">       
+                              <div class="row container-fluid inserimento margine">
+                                    <div class="col-md-4 centra descrizione">NOME</div>
+                                    <div class="col-md-8" id="colonnina">
+                                      <div class="row">
+                                        <div class="col" id="b">
+                                          <input class="form-control" type="text" id="txtnome">
+                                        </div>
+                                        <div class="col" id="a">
+                                        </div>
+                                      </div>
+                                    </div>       
                                 </div>
-                                <div class="row container-fluid inserimento margine">
-                                    <div class="col-md-4 ">COGNOME</div>
-                                    <div class="col-md-4 "><input type="text" id="txtcognome"></div>
-                                    
-                                    <div class="col-md-4 container-fluid"><input type="button" id="btninvio" value="INSERISCI"></div>
-                                </div>   
+                                <div class="row container-fluid inserimento margine rigainput">
+                                    <div class="col-md-4 centra descrizione">COGNOME</div>
+                                    <div class="col-md-8" >
+                                      <div class="row">
+                                        <div class="col" id="b">
+                                          <input class="form-control" type="text" id="txtcognome" >
+                                        </div>
+                                        <div class="col centra" id="colonnacognome">
+                                         <input type="button" id="btninvio" value="INSERISCI">
+                                        </div>
+                                      </div>
+                                    </div>                                                     
+                                </div>  
                             </div>
                         </div>
                     </div>
                 </div>
+              
                 <div class="col-sm-3 casella margine">
                     <div class="p-4 bordo bg-light" id="casellanominativi">
-                            Nominativi
-                        <div id="elenconominativi">
-                        <br>
-                        <!-- Qui apparirannno i nominativi -->
-                        </div>
+                      <div class="nominativi container-fluid">NOMINATIVI</div>
+                      <ul id="listanominativi" class="container-fluid">
+        
+                      </ul>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
         <!-- ModalRifiuto-->
     <div class="modal fade" id="ModalRifiuto" tabindex="-1" aria-labelledby="ModalRifiutoLabel" aria-hidden="true">
@@ -129,7 +147,24 @@
         </div>
       </div>
 
-        
+      <!-- Modal Conferma Eliminazione-->
+      <div class="modal fade" id="ModalConfermaDel" tabindex="-1" role="dialog" aria-labelledby="ModalConfermaDelLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ModalConfermaDelLabel">CONFERMA ELIMINAZIONE</h5>
+              </button>
+            </div>
+            <div class="modal-body">
+              Vuoi davvero eliminare questo nominativo?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" id="btnannulla" data-dismiss="modal">Annulla</button>
+              <button type="button" class="btn btn-secondary" id="btnDelConfermata" data-dismiss="modal">Conferma</button>
+            </div>
+          </div>
+        </div>
+      </div>      
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
