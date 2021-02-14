@@ -1,5 +1,6 @@
 .container{
     margin-top: 20px;
+   
 }
 
 
@@ -29,18 +30,56 @@ p{
     font-size: 13px;
 }
 
+@media (max-width: 992px) {
+    #navgenerale{
+        padding-left: 15px;
+    }
+}
+
 @media (max-width: 767px) {
     .col-md-4 {
       margin-bottom: 10px;
     }
 }
-#btninvio{
-    margin-left: 70px;
-}
+
 
 .bordo{
     border: 1px solid black;
 }
+
+
+.centra{
+    display: flex;
+    align-items: center;
+}
+
+.descrizione{
+    padding-left: 12%;
+}
+
+#btndelete{
+    width:13px;
+    height: 13px;
+}
+
+#listanominativi {
+    padding: 0px;
+    list-style: none;
+}
+
+li{
+    border: 1px solid black;
+}
+
+
+#btndelete{
+    width: 10px;
+    height: 10px;
+    margin: 0px;   
+}
+
+
+
 
 
 
