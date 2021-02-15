@@ -34,6 +34,12 @@ p{
     #navgenerale{
         padding-left: 15px;
     }
+    
+    #btnnav{
+        width: 150px;
+        margin-left: -15px;
+        margin-top: 15px;
+    }
 }
 
 @media (max-width: 767px) {
